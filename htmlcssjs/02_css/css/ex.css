@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'maple';
+  src: url("../fonts/MaplestoryBold.ttf") format('truetype');
+}
+
+body {
+  font-family: maple
+}
+
+#container {
+  margin: 10px auto; /* 중앙 배치 */
+  width:500px; /* 너비 */
+  padding: 10px; /* 테두리와 내용 사이 여백 */
+  border:1px solid #222; /* 테두리와 굵기의 색 */
+  text-align: center;
+  background-color: rgb(255, 218, 115);
+}
+
+h1 {
+  color: orange;
+  text-shadow: 3px 3px 0 #755518; /* 가로, 세로, 번짐정도, 색상지정 */
+}
+
+h2 {
+  text-shadow: /* 테두리 넣는건데 안되네용..*/
+  -1px -1px 0 #000
+  1px -1px 0 #000
+  -1px 1px  0 #000
+  1px 1px 0 #000;
+}
+
+a{
+  text-decoration: none;
+}

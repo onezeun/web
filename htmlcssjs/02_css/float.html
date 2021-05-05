@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델</title>
+	<style>
+		/* float : 요소를 지정한 위치에 뜨게 만들기 
+			배치할 때 많이 사용*/
+
+		div {
+			padding:20px;
+			margin:10px;
+		}
+		#box1{
+			background:#ffd800;
+			float:left;  /* 왼쪽으로 플로팅 */ 
+		}
+		#box2 {
+			background: #0094ff;
+			float:left;  /* 왼쪽으로 플로팅 */
+		}
+		#box3 {
+			background: #00ff21;
+		}
+		#box4 {
+			background:#a874ff;
+			clear:left;  /* 플로팅 해제 */
+		}
+	</style>
+</head>
+<body>
+	<div id="box1">하찌1</div>
+	<div id="box2">하찌2</div>
+	<div id="box3">하찌3</div>
+	<div id="box4">하찌4</div>
+</body>
+</html>

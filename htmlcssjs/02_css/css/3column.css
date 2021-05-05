@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 1200px;
+  margin: 20px auto; 
+}
+
+#header {
+  width: 100%; /* 100% = 컨테이너 너비와 같음 */
+  height: 120px;
+  background-color: #acacac;
+}
+
+#left-sidebar {
+  width: 250px;
+  height: 600px;
+  background-color: #e9e9e9;
+  float: left;
+}
+
+#contents {
+  width: 800px;
+  height: 600px;
+  background-color: aliceblue;
+  float: left; /* 왼쪽으로 왜 차곡차곡 쌓아야 되는 건데요...? 그걸 안알려주시네 ㅠ ㅠ */
+}
+
+#right-sidebar {
+  width: 150px;
+  height: 600px;
+  background-color: #e9e9e9;
+  float: right;
+}
+
+#footer {
+  color: white;
+  width: 100%;
+  height: 100px;
+  background-color: #222;
+  clear: both; /* 위 부분에 플로팅이 사용되었으니 여기는 해제를 해줘야함.. 왜? ㅋㅋ */
+}

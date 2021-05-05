@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 일기(박스 모델)</title>
+  <style>
+    h1 {
+      padding-bottom: 5px; /* 여백 */
+      border-bottom: 3px double blue; /* 아래줄만 */
+    }
+
+    p {
+      padding: 10px; /* 여백 */
+      border:2px dotted red;
+      border-radius:10px ; /* 박스 둥굴게 처리하기 픽셀, %값 설정 가능 */
+    }
+    .circle{
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img class="circle" src="images/111.png">
+  <h1>2021년 5월 5일 오늘의 일기</h1>
+  <p>오늘은 어린이 날이다. 혜지와 만나서 적당한 소음과 콘센트, 온도가 최적인 카페를 찾다가
+    결국 엔제리너스로 왔다. ㅋㅋ 노트북을 켜고 공부,, 를 하려했는데 롤 나만의 상점을 깠다
+    그리고 비트토렌트가 많이 올라서 너무 기분이 좋았다. 하지만 도지와 이클 불나방 결과 마이너스 만오천원이라는 손실이 생겼다. 
+    정말^^ 즐겁다^^</p>
+
+  <p>박스 모델은 실제 콘텐츠 영역, 박스와 콘텐츠 영역 사이의 여백인 패딩(padding), 박스의 테두리(border), 
+    그리고 여러 박스 모델 간의 여백인 마진(margin)등의 요소로 구성되어있습니다.</p>
+</body>
+</html>

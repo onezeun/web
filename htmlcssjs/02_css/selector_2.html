@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부모자식선택자</title>
+  <style>
+    ul li{ /* 하위선택자 : ul 밑에 있는 모든 태그 선택 */
+      color: red;
+    }
+
+    #lecture>li{ /* #lecture 바로 밑에 있는 li만 선택 */
+      border: 1px solid red;
+    }
+
+    ul, ol{ /* 동시에 효과주기 */
+      background-color: powderblue;
+    }
+  
+  </style>
+</head>
+<body>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+<ol id="lecture">
+  <li>HTML</li>
+  <li>CSS</li>
+    <ol>
+      <li>selector</li>
+      <li>declaration</li>
+    </ol>
+  <li>JavaScript</li>
+</ol>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상클래스선택자</title>
+  <style>
+    a:link{ /* 방문한 적이 없는 링크 */
+      color: black;
+    }
+    a:visited{ /* 방문한 적이 있는 링크 -> 여러 보안적인 문제로 일부속성만 쓸 수 있음 */
+      color: red;
+    }
+    a:hover{ /* 마우스를 롤오버 했을 때 */
+      color: yellow;
+    }
+    a:active{ /* 마우스를 클릭했을 때 */
+      color: green;
+    }
+    a:focus{ /* 탭 키 눌러서 포커싱 되었을 때 */
+      color: white;
+    }
+    input:focus{ /* 폼요소가 선택된 상태, 입력대기모드 */
+      background-color: black;
+      color:white
+    }
+  </style>
+</head>
+<body>
+  <a href="https://maple.gg/u/%ED%95%98%EC%B0%8C%EB%84%A4">방문함</a>
+  <a href="http://b.b">방문안함</a>
+  <input type="text">
+</body>
+</html>

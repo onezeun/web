@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<style>
+    .box {
+      margin:20px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #07f;
+      border: 1px solid #222;
+      transition-property: width, height;  /* 트랜지션 대상 - 너비, 높이 */
+      transition-duration: 2s, 1s;  /* 트랜지션 시간 - 2초, 1초 */
+      transition-delay: 1s; /* 트랜지션 지연 시간 설정 / 기다렸다가 이어서 실행하려고 할 때 ~ */
+      transition-timing-function: ease; /* 트랜지션의 시작, 중간, 끝 부분의 속도를 지정하는 것 */
+    }
+    /* 한꺼번에 지정하기
+        transition : 2s(실행하는시간) 2s(딜레이) ease; */
+    .box:hover {
+      width:200px;
+      height:120px;		
+    }
+	</style>
+</head>
+
+<body>
+	<div class="box"></div>	
+</body>
+</html>

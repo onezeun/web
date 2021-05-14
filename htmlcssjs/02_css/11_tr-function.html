@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Transition timing function</title>
+  <style>
+    #ex div{
+      float:left;
+      width:100px;
+      height:50px;
+      margin:5px 10px;
+      padding:5px;
+      color:white;
+      background-color:#006aff;
+      border-radius:5px;
+      text-align:center;
+      font-weight:bold;	
+    }
+    #ex:hover div{
+      height:400px;
+    }
+    #ex .ease { /* 기본 값. 처음에는 천천히 시작하고 점점 빨라지다가 마지막에 다시 천천히 */
+      transition: 3s ease;
+    }
+    #ex .linear{ /* 시작부터 끝까지 똑같은 속도로 진행 */
+      transition:3s linear;
+    }
+    #ex .ease-in{ /* 느리게 시작 */
+      transition:3s ease-in;
+    }
+    #ex .ease-out{ /* 느리게 끝냄 */
+      transition:3s ease-out;
+    }
+    #ex .ease-in-out{ /* 느리게 시작하고 느리게 끝냄 */
+      transition:3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="ex">
+    <div class="ease"> ease </div>
+    <div class="linear"> linear </div>
+    <div class="ease-in"> ease-in </div>
+    <div class="ease-out"> ease-out </div>
+    <div class="ease-in-out"> ease-in-out </div>
+  </div>
+</body>
+</html>

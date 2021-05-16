@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자바스크립트</title>
+	<style>
+		body { text-align:center; }
+		h1 { color:blue; }
+
+	</style>
+</head>
+<body>
+	<h1>간단한 입출력 방법</h1>
+  
+  <script>
+	// 알림 창 만들기
+	 var today = new Date();
+	 alert(today)
+
+	// 확인 창 만들기
+	confirm("양꼬치 먹을래?");
+
+	// 프롬프트 창에서 입력받기 텍스트 필드가 있는 작은 창
+	var name = prompt("이름알려주세요");
+	// 기본값 지정하기
+	prompt("세상에서 젤 귀여운 강쥐 이름은?", "하찌");
+
+	// 웹 브라우저 화면에 출력
+	document.write("<b><big>" + name + "</big></b>,하이용ㅋㅋ");
+	console.log("얘는 웹 개발창에 있는 콘솔창에 표시됩니다~~")
+  </script>
+</body>
+</html>

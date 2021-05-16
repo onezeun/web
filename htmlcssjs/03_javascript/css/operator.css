@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+h1 { text-align:center; }
+#heading { color:rgb(0, 140, 255); }
+ul {
+  list-style-position: inside;
+}
+p, li {
+  font-size: small;
+}
+.container {
+  display: grid; 
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); 
+  grid-gap:1rem; 
+}
+.bold {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0px 1px 5px #222;
+}
+.card > h3, ul, li, p {
+  padding : 1rem;
+}

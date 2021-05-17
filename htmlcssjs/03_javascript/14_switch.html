@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>세션 선택 - switch문</title>
+	<link rel="stylesheet" href="css/switch.css">
+</head>
+<body>	
+	<!-- 처리할 명령이 많으면 if~else문보다 switch가 편하다. -->
+	<script>
+		var session = prompt("하찌의 사료 종류를 고르세요 1-소고기, 2-오리고기, 3-양고기");
+		
+		switch (session) {
+			case "1" : document.write("<p>하찌는 <strong>소고기</strong>를 제일 좋아합니다.</p>")
+				break;
+			case "2" : document.write("<p>하찌는 <strong>오리고기</strong>를 적당히 좋아합니다.</p>");
+				break;
+			case "3" : document.write("<p>하찌는 <strong>양고기</strong>를 먹으면 안됩니다. 왜 이걸 고르셨어요?!</p>")
+				break;
+			default: alert("1~3 숫자를 입력하세요");
+		}
+	</script>
+</body>
+</html>

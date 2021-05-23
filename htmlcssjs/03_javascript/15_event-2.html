@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자바스크립트 이벤트</title>
+  <!-- DOM을 이용한 이벤트 처리기 16강에서 제대로 배울 예정  -->
+
+	<link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+	<button id="change">글자색 바꾸기</button>	
+	<p>그만짖어<br>하찌야!!!!!!!!!!!!!</p>
+	
+	<script>
+    // 방법 1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+    var changeBttn = document.querySelector("#change");
+    changeBttn.onclick = changeColor; // 함수 이름 뒤에 괄호가 없다는 것을 꼭 기억하셍용
+    
+		function changeColor() {
+      document.querySelector("p").style.color = "#f00";
+    }
+   
+    // 방법 2 : 웹 요소를 따로 변수로 만들지 않고 사용
+    // document.querySelector("#change").onclick = changeColor;
+
+		// function changeColor() {
+    //   document.querySelector("p").style.color = "#f00";
+    // }
+    
+    // 방법 3 : 직접 함수를 선언
+    // document.querySelector("#change").onclick = function() {
+    //   document.querySelector("p").style.color = "#f00";
+    // };
+
+		
+
+	</script>
+</body>
+</html>  

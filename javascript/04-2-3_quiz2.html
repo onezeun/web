@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>중첩 반복문 사용하기 (피라미드 만들기)</title>
+</head>
+<body>
+  <script>
+    let output = ''
+    
+    for(let i = 0; i < 9; i++) {
+      for(let j = 0; j < i + 1; j++) {
+        output += '*'
+      }
+      output += '\n'
+    }
+
+    alert(output)
+
+    /* 실행 결과
+    *
+    **
+    ***
+    ****
+    *****
+    ******
+    *******
+    ********
+    *********
+    */
+  </script>
+</body>
+</html>

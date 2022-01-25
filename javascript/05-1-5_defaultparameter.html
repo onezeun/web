@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>기본 매개변수를 추가한 윤년 함수</title>
+</head>
+
+<body>
+  <script>
+    /* 4로 나누어 떨어지는 해는 윤년이다.
+    하지만 100으로 나누어 떨어지는 해는 윤년이 아니다.
+    하지만 400으로 나누어 떨어지는 해는 윤년이다. */
+
+    const isLeapYear = function (year = new Date().getFullYear()) { // 함수 매개변수를 아무것도 입력하지 않았을때 올해 기준으로 나옴
+      return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)
+    }
+
+    console.log(isLeapYear()) // 올해가 윤년인지 알려준다
+  </script>
+</body>
+
+</html>

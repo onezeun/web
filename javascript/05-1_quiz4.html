@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>함수 만들기</title>
+</head>
+<body>
+  <script>
+    //A부터 B까지 범위를 지정했을 때 범위 안의 숫자를 모두 곱하는 함수
+    const multiplyAll = function(start, end) {
+      let output = 1
+      for(let i = start; i <= end; i++) {
+      output *= i
+      }
+      return output
+    }
+
+    console.log(multiplyAll(1, 2))
+    console.log(multiplyAll(1, 3))
+  </script>
+</body>

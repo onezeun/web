@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>최댓값을 찾는 max()함수 만들기 2</title>
+</head>
+<body>
+  <script>
+    // 매개변수로 max(1,2,3,4)와 같이 숫자 배열을 받는 max()함수 만들기
+    const max = function(...array) {
+      let output = array[0]
+      for(let item of array) {
+        if(output < item){
+          output = item
+        }
+      }
+      return output
+    }
+
+    console.log(max(1,2,3,4))
+  </script>
+</body>

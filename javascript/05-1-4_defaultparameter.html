@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>기본 매개변수의 활용</title>
+</head>
+<body>
+  <script>
+    /* 매개변수로 시급과 시간을 입력받아 급여를 계산하는 함수
+    함수이름 : earnings
+    매개변수 : name(이름), wage(시급), hours(시간)
+    함수의 역할 : 이름, 시급, 시간을 출력하고 시급과 시간을 곱한 최종 급여 출력
+    wage와 hours를 입력하지 않고 실행하면 wage에 최저임금이 들어가고 
+    hours에 법정근로시간 1주일  40시간이 기본 매개변수로 입력되게 만들기
+    */
+
+    const earnings = function(name, wage=9160, hours=40) {
+      console.log(`${name}님의 급여정보`)
+      console.log(`- 시급 : ${wage}원`)
+      console.log(`- 근무 시간 : ${hours}`)      
+      console.log(`- 급여 : ${wage * hours}원`)
+      console.log(``)
+    }
+
+    // 최저임금으로 최대한 일하는 경우
+    earnings('구름')
+    // 시급 1만원으로 최대한 일하는 경우
+    earnings('별',10000)
+    // 시급 1만원으로 52시간 일하는 경우
+    earnings('하찌',10000,52)
+  </script>
+</body>
+</html>

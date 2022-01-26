@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>최댓값 구하기</title>
+</head>
+<body>
+  <script>
+    const max = function (array) {
+      let output = array[0]
+      for (const item of array) {
+        if (output < item) {
+          output = item
+        }
+      }
+      return output
+    }
+
+    const testArray = [610, 522, 6, 72, 450, 98]
+    console.log(`${testArray}중에서`)
+    console.log(`최대값 = ${max(testArray)}`)
+  </script>
+</body>

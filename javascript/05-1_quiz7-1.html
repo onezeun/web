@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>최댓값을 찾는 max()함수 만들기 3</title>
+</head>
+
+<body>
+  <script>
+    // max([1,2,3,4]) 형태와 max(1,2,3,4) 형태를 모두 입력할 수 있는 max()함수 만들기
+    const max = function (첫번째요소, ...나머지) {
+      if (Array.isArray(첫번째요소)) {  //첫번째 요소가 배열인지 확인
+        // Array.isArray(배열) → 배열이면 true, 배열이 아니면 false
+        let output = 첫번째요소[0]
+        for (const 값 of 첫번째요소) {
+          if (output < 값) {
+            output = 값
+          }
+        }
+        return output
+      } else {
+        let output = 첫번째요소
+        for (const 값 of 나머지) {
+          if (output < 값) {
+            output = 값
+          }
+      }
+      return output
+    }
+  }
+
+    console.log(max(1, 2, 3, 4))
+    console.log(max([1, 2, 3, 4]))
+  </script>
+</body>

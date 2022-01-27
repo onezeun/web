@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>메소드 체이닝</title>
+</head>
+
+<body>
+  <script>
+    //어떤 메소드가 리턴하는 값을 기반으로해서 함수를 줄줄이 사용하는 것
+
+    // 배열 선언
+    let numbers = [0, 1, 2, 3, 4, 5]
+
+    // 배열의 메소드를 연속적으로 사용 (메소드 체이닝)
+    numbers
+      .filter((value) => value % 2 === 0) 		// 짝수
+      .map((value) => value * value) 	  	// 제곱
+      .forEach((value) => { console.log(value) })	// 호출
+
+    /* 실행결과
+    0
+    4
+    16
+    */
+  </script>
+</body>

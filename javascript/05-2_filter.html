@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>콜백 함수를 활용하는 함수 : filter()</title>
+</head>
+
+<body>
+  <script>
+    // 콜백 함수에서 리턴하는 값이 true인 것들만 모아서 새로운 배열을 만드는 함수
+
+    // 홀수 찾기
+    let 배열 = [522, 610, 103, 54, 47]
+    배열 = 배열.filter(function (value, index) {
+      return value % 2 === 1
+    })
+    console.log(배열)
+
+    /* 실행 결과
+    (2) [103, 47]
+    */
+  </script>
+</body>

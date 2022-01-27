@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>콜백 함수를 활용하는 함수 : forEach()</title>
+</head>
+
+<body>
+  <script>
+    // 콜백함수를 활용하는 가장 기본적인 함수
+    // 배열이 갖고 있는 함수로써 단순하게 배열 내부의 요소를 사용해 콜백 함수를 호출해 줌
+    const 배열 = [522, 610, 103, 54, 47]
+
+    배열.forEach(function (value, index, array) {
+      console.log(`${index}번째의 값은 ${value}입니다.`)
+    })
+    // array 현재 반복을 돌고있는 배열을 의미. 자주 사용하지 않음
+
+    /* 실행 결과
+    실행결과
+    0번째의 값은 522입니다.
+    1번째의 값은 610입니다.
+    2번째의 값은 103입니다.
+    3번째의 값은 54입니다.
+    4번째의 값은 47입니다.
+    */
+  </script>
+</body>

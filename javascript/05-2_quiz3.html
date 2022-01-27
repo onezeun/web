@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>반복문 → forEach() 형태로 바꾸기</title>
+</head>
+<body>
+  <script>
+    const array = ['사과', '배', '귤', '바나나']
+
+    /* for in 반복문 바꾸기
+    console.log('# for in 반복문')
+    for (const i in array) {
+      console.log(i)
+    }*/
+
+    console.log('for in 반복문')
+    array.forEach((value, index) => {
+      console.log(index)
+    })
+
+    /* for of 반복문 바꾸기 
+    console.log('# for of 반복문')
+    for (const i of array) {
+      console.log(i)
+    }*/
+
+    console.log('for of 반복문')
+    array.forEach(function(value, index) {
+      console.log(value)
+    })
+
+
+
+    /* 내가 한거
+    array.forEach((value, index) => {
+      console.log('for in 반복문')
+      console.log(index)
+      console.log('for of 반복문')
+      console.log(value) 
+    }) 결과 번갈아가면서 나옴.. */
+  </script>
+</body>
+</html>

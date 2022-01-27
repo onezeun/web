@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>filter함수 확인문제</title>
+</head>
+
+<body>
+  <script>
+    /* 
+    1. 홀수만 추출
+    2. 100이하의 수만 추출
+    3. 5로 나누 나머지가 0인수만 추출하기 */
+
+    // 변수 선언
+    let numbers = [273, 25, 75, 52, 103, 32, 57, 24, 76]
+
+    // 홀수만 추출
+    numbers = numbers.filter((value) => value % 2 === 1)
+    console.log('홀수만 추출')
+    console.log(numbers)
+
+    // 100 이하의 수만 추출
+    numbers = numbers.filter((value) => value <= 100)
+    console.log('100 이하의 수만 추출')
+    console.log(numbers)
+
+    // 5로 나눈 나머지가 0인 수만 추출
+    numbers = numbers.filter((value) => value % 5 === 0)
+    console.log('5로 나눈 나머지가 0인 수만 추출')
+    console.log(numbers)
+
+
+    /*
+    'numbers ='를 하는 이유?
+    filter 함수 등의 비파괴적 함수는 결과가 리턴되기때문에
+    리턴값을 받지 않으면 결과가 그냥 사라져 버림 그러니 쓰세용
+    */
+
+    // 마지막 결과만 알고 싶으면
+    numbers = numbers.filter((value) => value % 2 === 1 && value <= 100 && value % 5 === 0)
+
+  </script>
+</body>
+
+</html>

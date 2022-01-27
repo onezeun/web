@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>즉시 호출 함수 IIFE</title>
+</head>
+
+<body>
+  <!-- 다른 곳에서 가져온 자바스크립트 코드 -->
+  <script>
+    const a = 10
+    console.log(`하찌가 쓴 코드의 a는 ${a}다.`)
+  </script>
+
+  <!-- 내가 쓴 코드! -->
+  <script>
+      (function () {
+        const a = 20
+        console.log(`내가 쓴 코드의 a는 ${a}다.`)
+      })()
+  </script>
+</body>
+
+</html>

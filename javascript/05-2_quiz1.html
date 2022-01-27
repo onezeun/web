@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>타이머 취소하기</title>
+</head>
+
+<body>
+  <script>
+    let timer
+    let count = 0
+    timer = setInterval(() => {
+      console.log(`2초마다 실행됩니다. (${count}번째`)
+      count++
+    }, 2000)
+
+    // 10초 뒤에 종료해야하니까 setTimeout() 함수 활용
+    setTimeout(() => {
+      console.log(`타이머를 종료합니다.`)
+      clearInterval(timer) // setInterval로 설정한 함수 제거
+    }, 10 * 1000)
+  </script>
+</body>
+
+</html>

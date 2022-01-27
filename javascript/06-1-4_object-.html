@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>객체에 동적으로 속성 제거</title>
+</head>
+
+<body>
+  <script>
+    // 객체의 키와 값을 정적으로 생성한다
+    const pet = {
+      name: '하찌',
+      age: 7
+    }
+
+    // 객체의 키와 값을 동적으로 생성한다
+    pet.color = 'white'
+
+    //객체의 키와 값을 동적으로 제거한다
+    delete pet.color
+
+    console.log(pet)
+
+    /* delete 객체.속성
+    delete 객체['속성']
+    
+    delete는 키워드 연산자*/
+  </script>
+</body>

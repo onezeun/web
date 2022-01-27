@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>객체(object)</title>
+</head>
+
+<body>
+  <script>
+    const dog = {
+      name: '하찌',					                      // 속성
+      age: 7,					                            // 속성
+      bark: function () {			                  	// 메소드
+        console.log(`${dog.name}가 짖습니다`)
+      },
+      sleep: () => {		                       		// 메소드
+        console.log(`${dog.name}가 잡니다`)
+      }
+    }
+
+    // 객체 요소 접근
+    dog['neme']
+    dog['age']
+    dog.bark()
+    dog.sleep()
+  </script>
+</body>

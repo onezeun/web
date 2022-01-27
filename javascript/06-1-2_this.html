@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>메소드 내부에서 this 키워드 사용하기</title>
+</head>
+
+<body>
+  <script>
+    const dog = {
+      name: '하찌',
+      bark: function () {
+        // 두 코드가 동일한 의미를 가짐
+        console.log(`${dog.name}가 짖습니다`)
+        console.log(`${this.name}가 짖습니다`)
+      }
+    }
+    // 화살표 함수로 메소드를 만들어 this 키워드를 사용하면 window 객체를 보여주므로 사용 XX
+  </script>
+</body>

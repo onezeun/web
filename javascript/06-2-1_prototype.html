@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>프로토타입으로 숫자 메소드 추가하기</title>
+</head>
+<body>
+  <script>
+    // power() 메소드 추가
+    Number.prototype.power = function ( n = 2) {
+      // valueOf() : 어떤 객체가 원시 타입의 값을 가지고 있지 않다면 객체 자신을 반환
+      // ** : 제곱 연산자
+      return this.valueOf() ** n
+    }
+
+    // Number 객체의 power() 메소드 사용
+    const a = 12
+    console.log('a.power():', a.power())    // 12²
+    console.log('a.power(3):', a.power(3))  // 12³
+    console.log('a.power(4):', a.power(4))  // 12⁴
+
+    /* 실행 결과
+    a.power(): 144
+    a.power(3): 1728
+    a.power(4): 20736
+    */
+  </script>
+</body>

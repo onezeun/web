@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>프로토타입으로 문자열 메소드 추가하기</title>
+</head>
+<body>
+  <script>
+    String.prototype.contain = function (data) {
+      return this.indexOf(data) >= 0
+    }
+
+    Array.prototype.contain = function (data) {
+      return this.indexOf(data) >=0
+    }
+
+    const a = '안녕하세요'
+    console.log('안녕 in 안녕하세요:', a.contain('안녕'))
+    console.log('반갑습니다 in 안녕하세요:', a.contain('반갑습니다'))
+
+    const b = [522, 15, 610, 7282, 36]
+    console.log('610 in [522, 15, 610, 7282, 36]:', b.contain(610))
+    console.log('0 in [522, 15, 610, 7282, 36]:', b.contain(0))
+  </script>
+</body>

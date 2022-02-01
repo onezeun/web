@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>랜덤한 정수 만들기</title>
+</head>
+
+<body>
+  <script>
+    const num = Math.random()
+    
+    console.log('# 랜덤 숫자 만들기')
+    console.log('0-1 사이의 랜덤한 숫자:', num)
+    console.log('')
+
+    console.log('# 랜덤 숫자 만들기')
+    console.log('0~100 사이의 랜덤한 숫자:', Math.floor(num * 100))
+    console.log('')
+
+    console.log('# 랜덤 숫자 만들기')
+    console.log('-100 ~ 100 사이의 랜덤한 숫자:', Math.floor(num * 200 - 100))
+    console.log('')
+  </script>
+</body>

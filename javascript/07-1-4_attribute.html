@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>글자 조작하기</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 조작
+      const img = document.querySelector('img')
+      // 값을 넣는 행위
+      img.setAttribute('src', 'https://media.vlpt.us/images/onezeun/post/485ec27f-cca5-412d-98ed-203ac8153b9f/%EB%82%98%EC%9D%98%ED%94%84%EB%A1%9C%ED%95%84.png')
+      // 값을 추출하는 행위
+      console.log(img.getAttribute('src')) // 개발자 도구 콘솔에서 이미지 주소 확인 가능
+      
+      /* 간단하게 코드 쓰기
+      값을 넣는 행위
+      img.src = 'https://media.vlpt.us/images/onezeun/post/485ec27f-cca5-412d-98ed-203ac8153b9f/%EB%82%98%EC%9D%98%ED%94%84%EB%A1%9C%ED%95%84.png'
+      값을 추출하는 행위
+      console.log(img.src)
+      */
+    })
+  </script>
+</head>
+<body>
+  <img src='' alt=''>
+</body>
+
+</html>

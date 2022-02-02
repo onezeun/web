@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>createElement 문서 객체 이동 심화2</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 문서 객체 읽어들이고 생성하기
+      const header = document.createElement('h2')
+      header.textContent = '안녕하세요'
+
+      const array = [
+        document.querySelector('.first'),
+        document.querySelector('.second')
+      ]
+
+      // 서로 번갈아가면서 실행하는 함수 구현
+      let 카운터 = 0
+      const fun = () => {
+        array[카운터 % 2].appendChild(header)
+        카운터++
+      }
+      setInterval(fun, 1000)
+      fun()
+    })
+  </script>
+</head>
+<body>
+  <div class='first'>
+    <h1>첫 번째 div 태그 내부</h1>
+  </div>
+  <hr>
+  <div class='second'>
+    <h1>두 번째 div 태그 내부</h1>
+  </div>
+</body>
+</html>
